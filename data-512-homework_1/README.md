@@ -10,6 +10,9 @@ The code is provided in the notebook `article_pageviews.ipynb`.
 
 ## Output files
 The code generates the following output files:
-- dino_monthly_desktop_201501-202209.json, which is monthly page views on desktop
-- dino_monthly_mobile_201501-202209.json, which is monthly page views on mobile
-- dino_monthly_cumulative_201501-202209.json, which is monthly page views on desktop and mobile combined
+- `dino_monthly_desktop_201501-202209.json`, which is monthly page views on desktop
+- `dino_monthly_mobile_201501-202209.json`, which is monthly page views on mobile
+- `dino_monthly_cumulative_201501-202209.json`, which is monthly page views on desktop and mobile combined
+- `MaximumAndMinimumAverage.png`, which is the plot for max and min viewed articles by access type
+- `top10.png`, which is the plot for top 10 viewed articles by access type
+- `fewest10.png`, which is the plot for fewest 10 viewed articles by access type
