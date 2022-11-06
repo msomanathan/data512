@@ -1,18 +1,15 @@
-# Homework 1
-The goal of this homework is to collect user page views data of several dinosaur pages in Wikipedia, and analyze the pages that are visited most often. In addition, we also analyze the pages least popular. The data is a time series from January 2015 to September 2022.
+# Project
+The goal of this project is to answer the research question: How did masking policies change the progression of confirmed COVID-19 cases from February 1, 2020 through October 1, 2021?
 
 ## Data source
-- The list of dinosaur articles is available in the file `dinosaur_articles.csv`. This was obtained from https://docs.google.com/spreadsheets/d/1zfBNKsuWOFVFTOGK8qnTr2DmHkYK4mAACBKk1sHLt_k/edit?usp=sharing.
-- The source data for Wikipedia pages is from the REST API documented in https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews. The API usage license and terms are available in https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions.
+The following 3 datasets were downloaded to acquire the raw data for COVID-19 confirmed cases in the US for all counties:
+- `confirmed_cases.csv`: https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university. This dataset has the cumulative confirmed COVID-19 cases for each US county from Feb 2020 to Oct 2021.
+- `mask_mandates.csv`: https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i. This dataset tells whether mask mandate was in effect for any given day for each US county from Feb 2020 to Oct 2021. There are days where this data was missing, and these were assumed to be no mask mandate in effect.
+- `mask_usage.csv`: https://github.com/nytimes/covid-19-data/tree/master/mask-use. This dataset provides the percentage of the population that complied with mask mandate policies for every US county.
 
 ## Code
-The code is provided in the notebook `article_pageviews.ipynb`.
+The code is provided in the notebook `project.ipynb`.
 
-## Output files
-The code generates the following output files:
-- `dino_monthly_desktop_201501-202209.json`, which is monthly page views on desktop
-- `dino_monthly_mobile_201501-202209.json`, which is monthly page views on mobile
-- `dino_monthly_cumulative_201501-202209.json`, which is monthly page views on desktop and mobile combined
-- `MaximumAndMinimumAverage.png`, which is the plot for max and min viewed articles by access type
-- `top10.png`, which is the plot for top 10 viewed articles by access type
-- `fewest10.png`, which is the plot for fewest 10 viewed articles by access type
+## Visualization
+The visualization of the COVID-19 case data is found in:
+- `visualization.png`, which plots a time series of both the infection rate, and the actual infections on any given date. Furthermore, the plot highlights the time period where mask mandate was in effect.
