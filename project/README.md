@@ -18,3 +18,6 @@ The code is provided in the notebook `project.ipynb`.
 ## Visualization
 The visualization of the COVID-19 case data is found in:
 - `visualization.png`, which plots a time series of both the infection rate, and the actual infections on any given date. Furthermore, the plot highlights the time period where mask mandate was in effect.
+- `HomeValues_County.png`, which plots time series of all home types for Essex county, NJ.
+- `HomeValues_Metro.png`, which plots time series of all home types for Newark, NJ.
+- `HomeValues_SFRvCondo.png`, which compares time series of Single Family Residences vs Condos/Townhomes.
