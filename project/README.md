@@ -7,6 +7,11 @@ The following 3 datasets were downloaded to acquire the raw data for COVID-19 co
 - `mask_mandates.csv`: https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i. This dataset tells whether mask mandate was in effect for any given day for each US county from Feb 2020 to Oct 2021. There are days where this data was missing, and these were assumed to be no mask mandate in effect.
 - `mask_usage.csv`: https://github.com/nytimes/covid-19-data/tree/master/mask-use. This dataset provides the percentage of the population that complied with mask mandate policies for every US county.
 
+The following 6 datasets were downloaded to acquire the raw data for home values in the US for all counties and metro cities from Zillow (https://www.zillow.com/research/data/):
+- `zhvi_all_county.csv` / `zhvi_all_city.csv`: This dataset has the monthly home values for all types of homes in the US counties/cities.
+- `zhvi_sfr_county.csv` / `zhvi_sfr_city.csv`: This dataset has the monthly home values for Single Family Residences (SFR) in the US counties/cities.
+- `zhvi_condo_county.csv` / `zhvi_condo_city.csv`: This dataset has the monthly home values for condos and townhomes in the US counties/cities.
+
 ## Code
 The code is provided in the notebook `project.ipynb`.
 
